@@ -11,5 +11,11 @@ public class IndexController {
 	public String index(Model model) {
 		return "redirect:/leiloes";
 	}
+	
+	@GetMapping("/finalizar")
+	public void finalizar() {
+		System.out.println("\n\nFinalizando aplicacao....\n\n");
+		System.exit(1);
+	}
 
 }

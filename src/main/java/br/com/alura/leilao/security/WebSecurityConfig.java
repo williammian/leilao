@@ -25,6 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 		.antMatchers(HttpMethod.GET, "/").permitAll()
 		.antMatchers(HttpMethod.GET, "/leiloes").permitAll()
+		.antMatchers(HttpMethod.GET, "/finalizar").permitAll()
 		.anyRequest().authenticated()
 		.and()
 		.formLogin(form -> form.loginPage("/login").defaultSuccessUrl("/leiloes", true).permitAll())
