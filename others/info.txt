@@ -1,3 +1,45 @@
-//Rodar o jar sem travar o prompt de comando no windows
+//Jobs - Jenkins
 
+//leilao-testes
+
+1) Configurar Git (repository URL)
+
+2) Trigger de builds
+Marcar -> Consultar periodicamente o SCM
+Agenda
+* * * * *
+significa que verificará se houve um novo commit a cada 1 minuto
+
+3) Build
+Maven
+Goals -> clean test
+
+4) Acões de pós-build
+Publicar XML de teste
+Colocar -> target/surefire-reports/*.xml
+
+
+//-----------------------------------------
+
+//leilao-deploy
+
+1) Configurar Git (repository URL)
+
+2) Trigger de builds
+Não marcar nada
+
+3) Build
+- Maven
+Goals -> clean package
+
+- Executar no comando do Windows
+Comando
+
+set BUILD_ID=DontKillMe
 start /min java -Dspring.profiles.active=prod -jar leilao-0.0.1-SNAPSHOT.jar
+
+- Executar no comando do Linux
+Comando
+
+BUILD_ID="DontKillMe" java -Dspring.profiles.active=prod -jar leilao-0.0.1-SNAPSHOT.jar&
+
