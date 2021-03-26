@@ -1,0 +1,35 @@
+Controle de Acesso
+
+Dashboard > Gerenciar Jenkins
+Security > Gerenciar usuários
+opção Criar usuário
+
+
+-----------------------------------
+
+Security
+Configurar segurança global
+
+Autorização
+(estratégias)
+
+
+------------------------------------
+
+
+Plugin
+
+Instalar
+
+Matrix Authorization Strategy
+
+Gerenciar Jenkins
+Configurar segurança global
+Autorizaçao
+
+	Segurança baseada em matriz
+	
+		Add user or group
+		
+
+-----------------------------------
