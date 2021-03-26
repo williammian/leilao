@@ -1,0 +1,24 @@
+Configurar servidor de e-mail no Jenkins
+
+Gerenciar Jenkins > System Configuration > Configurar o sistema
+
+Notificação de E-mail
+(efetuar configurações SMTP, SLL, TLS, testes, etc)
+
+
+------------------------------------------------
+
+Ir ao Job
+
+Menu Configurar
+
+Adicionar como 'Ações de pós-build' (Post-build Actions)
+
+Adicionar ação de pós-build > Notificação de E-mail
+
+Destinatários
+(colocar e-mails aqui separados por espaço em branco)
+
+Marcar as opções desejadas
+
+------------------------------------------------
